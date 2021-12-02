@@ -1,0 +1,4 @@
+node(){
+stage('adding')
+println('new')
+}
