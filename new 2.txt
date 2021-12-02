@@ -1,0 +1,5 @@
+node{
+stage('creating a file'){
+echo'this is test one'
+}
+}
