@@ -1,7 +1,10 @@
 pipeline {
-  agent none
-  /home/ubuntu/create
-
+  agent{
+    node{
+      label 'master'
+         customworkspace  '/home/ubuntu/create'
+         }
+       }
   parameters {
     choice(choices: ['ONE', 'TWO', 'THREE', 'FOUR', 'FIVE'], name: 'CHOCIE_Param')
     booleanParam(defaultValue: true, description: '', name: 'BOOLEAN')
