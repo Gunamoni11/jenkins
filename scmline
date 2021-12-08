@@ -29,6 +29,7 @@ stage('Stage 1'){
           println('returnValue')
       }
     }
-  }
 ')',
+}
+
 }
