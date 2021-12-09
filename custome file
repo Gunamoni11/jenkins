@@ -2,7 +2,7 @@ pipeline {
   agent{
     node{
     label 'master'
-         customworkspace '/home/ubuntu/create'
+         customWorkspace '/home/ubuntu/create'
          }
        }
   parameters {
