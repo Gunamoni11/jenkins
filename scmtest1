@@ -1,0 +1,25 @@
+ node('master'){
+   parameters {
+      booleanParam(defaultValue: true, description: '', name: 'Factor')
+	  stages {
+    stage('1st Stage'){
+      steps {
+        echo "My Env command $SERVICE_CREDS"
+        println('My 1st Step command')
+      }
+    }
+  }
+}
+	stage{
+    step {
+    if(factor == true){
+      println("As value is " + factor)
+          def returnValue = input message: 'Need some input',
+          println(returnValue)
+    }
+	 else 
+	  echo 'the value is wrong'
+    return
+  }
+  }
+  }
