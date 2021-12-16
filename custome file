@@ -27,12 +27,12 @@ stage('2nd Stage'){
         println('Hello STRING-PARAMETER!! ' + STRING_PARAMETER)
       }
     }
-    stage('3rd Stage'){
-      steps {
-        script {
-          sh("echo 'My Env command $SERVICE_CREDS' >> Test.txt")
-        }
-      }
-    }
+//    stage('3rd Stage'){
+//      steps {
+//        script {
+//          sh("echo 'My Env command $SERVICE_CREDS' >> Test.txt")
+//        }
+//      }
+//    }
   }
 }
